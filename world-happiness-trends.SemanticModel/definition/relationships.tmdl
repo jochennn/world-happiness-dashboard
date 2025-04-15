@@ -1,0 +1,5 @@
+relationship 3783fa27-d2fd-4019-af91-0c03985b4de6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: world_happiness_report.Year
+	toColumn: LocalDateTable_9f25e7e1-1e78-4398-bfea-3e488939256e.Date
+

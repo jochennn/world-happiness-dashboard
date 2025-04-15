@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "world-happiness-trends"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6d4b2a20-4adf-42cf-ade1-bc096868dd23"
+  }
+}

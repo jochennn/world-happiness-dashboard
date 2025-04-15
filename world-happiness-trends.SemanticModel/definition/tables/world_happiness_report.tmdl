@@ -1,0 +1,262 @@
+table world_happiness_report
+	lineageTag: 8c390a7c-4e7c-45d3-aee2-c8e5a7b02bdd
+
+	column Country
+		dataType: string
+		lineageTag: 5e1427d0-fa62-4af4-8000-72481917b07d
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: eacb71d0-1c01-4f91-b1d8-7ab73e86d91a
+		summarizeBy: none
+		sourceColumn: Year
+
+		variation Variation
+			isDefault
+			relationship: 3783fa27-d2fd-4019-af91-0c03985b4de6
+			defaultHierarchy: LocalDateTable_9f25e7e1-1e78-4398-bfea-3e488939256e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Happiness_Score
+		dataType: double
+		lineageTag: 395008ac-bdd5-44b4-84d1-83886afcc40d
+		summarizeBy: sum
+		sourceColumn: Happiness_Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GDP_per_Capita
+		dataType: double
+		lineageTag: 8d1878db-fc70-4de7-833a-a0a10a93fdae
+		summarizeBy: sum
+		sourceColumn: GDP_per_Capita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Social_Support
+		dataType: double
+		lineageTag: 09b557e9-1cf0-4102-bf5f-af8f291513a3
+		summarizeBy: sum
+		sourceColumn: Social_Support
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Healthy_Life_Expectancy
+		dataType: double
+		lineageTag: f68bd63e-1765-42ad-b419-20a13fb8c9df
+		summarizeBy: sum
+		sourceColumn: Healthy_Life_Expectancy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Freedom
+		dataType: double
+		lineageTag: d8945c07-554e-43a4-9909-a1dfba515c28
+		summarizeBy: sum
+		sourceColumn: Freedom
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Generosity
+		dataType: double
+		lineageTag: fabf11f0-efbc-4458-9266-dec5652ebf57
+		summarizeBy: sum
+		sourceColumn: Generosity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Corruption_Perception
+		dataType: double
+		lineageTag: 3f1ac37d-67c0-4369-9655-339cd96f6ef3
+		summarizeBy: sum
+		sourceColumn: Corruption_Perception
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unemployment_Rate
+		dataType: double
+		lineageTag: 8ba2dd53-8445-40f4-bf7e-bb73f2009b76
+		summarizeBy: sum
+		sourceColumn: Unemployment_Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Education_Index
+		dataType: double
+		lineageTag: f4b12906-c691-46bc-82b1-872b9a7f7cc6
+		summarizeBy: sum
+		sourceColumn: Education_Index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Population
+		dataType: int64
+		formatString: 0
+		lineageTag: 30bc7e20-c800-428a-b77b-0647b4e04855
+		summarizeBy: sum
+		sourceColumn: Population
+
+		annotation SummarizationSetBy = Automatic
+
+	column Urbanization_Rate
+		dataType: double
+		lineageTag: fba9cf57-40dd-4e7e-8e87-8a2f8dc963fd
+		summarizeBy: sum
+		sourceColumn: Urbanization_Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Life_Satisfaction
+		dataType: double
+		lineageTag: 58aa37a8-0b33-4218-9009-0e3d9a0ab2cb
+		summarizeBy: sum
+		sourceColumn: Life_Satisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Public_Trust
+		dataType: double
+		lineageTag: 6c0d8bae-6a78-4885-bd7f-f05b1cc8bec9
+		summarizeBy: sum
+		sourceColumn: Public_Trust
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Mental_Health_Index
+		dataType: double
+		lineageTag: db27d542-f445-4ba3-9d1d-c5d010fb9ec2
+		summarizeBy: sum
+		sourceColumn: Mental_Health_Index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Income_Inequality
+		dataType: double
+		lineageTag: 2da3d904-eb92-44aa-ab75-2ea761a28236
+		summarizeBy: sum
+		sourceColumn: Income_Inequality
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Public_Health_Expenditure
+		dataType: double
+		lineageTag: 5c390534-f7a1-456b-9e1d-cc159cff7b0b
+		summarizeBy: sum
+		sourceColumn: Public_Health_Expenditure
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Climate_Index
+		dataType: double
+		lineageTag: 55d34a73-c074-4aea-beeb-15b142a80ffc
+		summarizeBy: sum
+		sourceColumn: Climate_Index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Work_Life_Balance
+		dataType: double
+		lineageTag: 1eb3d1f7-4e63-4407-bca2-a25fc49eaca2
+		summarizeBy: sum
+		sourceColumn: Work_Life_Balance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Internet_Access
+		dataType: double
+		lineageTag: 22b8e5ae-a8ef-4803-8645-7186441de961
+		summarizeBy: sum
+		sourceColumn: Internet_Access
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Crime_Rate
+		dataType: double
+		lineageTag: ea5ed4f2-12ea-4d49-bc91-aac25ac5692c
+		summarizeBy: sum
+		sourceColumn: Crime_Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Political_Stability
+		dataType: double
+		lineageTag: 6f89f2a6-b578-4cc4-b1ed-079241a51c52
+		summarizeBy: sum
+		sourceColumn: Political_Stability
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Employment_Rate
+		dataType: double
+		lineageTag: d3e04e15-2e20-4dbc-b62e-687d5ec15324
+		summarizeBy: sum
+		sourceColumn: Employment_Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition world_happiness_report = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\17782\Downloads\world_happiness_report.xlsx"), null, true),
+				    world_happiness_report_Sheet = Source{[Item="world_happiness_report",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(world_happiness_report_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Country", type text}, {"Year", Int64.Type}, {"Happiness_Score", type number}, {"GDP_per_Capita", type number}, {"Social_Support", type number}, {"Healthy_Life_Expectancy", type number}, {"Freedom", type number}, {"Generosity", type number}, {"Corruption_Perception", type number}, {"Unemployment_Rate", type number}, {"Education_Index", type number}, {"Population", Int64.Type}, {"Urbanization_Rate", type number}, {"Life_Satisfaction", type number}, {"Public_Trust", type number}, {"Mental_Health_Index", type number}, {"Income_Inequality", type number}, {"Public_Health_Expenditure", type number}, {"Climate_Index", type number}, {"Work_Life_Balance", type number}, {"Internet_Access", type number}, {"Crime_Rate", type number}, {"Political_Stability", type number}, {"Employment_Rate", type number}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Changed Type",{{"Year", type date}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
