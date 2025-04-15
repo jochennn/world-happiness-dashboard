@@ -1,5 +1,6 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "filters": "[{\"name\":\"2a18c1fad1f0fdfa4571\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"world_happiness_report\"}},\"Property\":\"Country\"}},\"type\":\"Advanced\",\"howCreated\":1}]",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -25,7 +26,44 @@
       "filters": "[]",
       "height": 720.00,
       "name": "bb325b874bed24b7ba08",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"20dcb69d416b915e796d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.571428571428573,\"y\":108.57142857142858,\"z\":1001,\"width\":272.8571428571429,\"height\":132.85714285714286,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(world_happiness_report.Country)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"world_happiness_report\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Country\"}},\"Function\":3},\"Name\":\"Min(world_happiness_report.Country)\",\"NativeReferenceName\":\"First Country\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[{\"name\":\"847b7060c69faee9d992\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"world_happiness_report\"}},\"Property\":\"Country\"}},\"type\":\"Advanced\",\"howCreated\":1},{\"name\":\"6d073743a48708bd2bce\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"world_happiness_report\"}},\"Property\":\"Country\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+          "height": 132.86,
+          "width": 272.86,
+          "x": 18.57,
+          "y": 108.57,
+          "z": 1001.00
+        },
+        {
+          "config": "{\"name\":\"590911dc96e7c6ed0aa1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500,\"y\":109,\"width\":780,\"height\":150,\"z\":1003,\"tabOrder\":1003}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"world_happiness_report.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"world_happiness_report\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Year\"},\"Name\":\"world_happiness_report.Year\",\"NativeReferenceName\":\"Year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'1905-06-27T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"world_happiness_report\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"datetime'1905-06-29T00:00:00'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 780.00,
+          "x": 500.00,
+          "y": 109.00,
+          "z": 1003.00
+        },
+        {
+          "config": "{\"name\":\"a667cce753c9a5dd6d22\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.571428571428573,\"y\":14.285714285714286,\"z\":1000,\"width\":1261.4285714285716,\"height\":84.28571428571429,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"What makes the world happy?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Calibri\",\"fontSize\":\"40pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":-0.5}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 84.29,
+          "width": 1261.43,
+          "x": 18.57,
+          "y": 14.29,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b1ca14ab44fddd061632\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.571428571428573,\"y\":324.28571428571433,\"z\":1002,\"width\":774.2857142857143,\"height\":377.14285714285717,\"tabOrder\":1002}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Sum(world_happiness_report.Generosity)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(world_happiness_report.Happiness_Score)\"}],\"Series\":[{\"queryRef\":\"world_happiness_report.Year\"}],\"Tooltips\":[{\"queryRef\":\"Min(world_happiness_report.Country)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"world_happiness_report\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Generosity\"},\"Name\":\"Sum(world_happiness_report.Generosity)\",\"NativeReferenceName\":\"Generosity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Happiness_Score\"},\"Name\":\"Sum(world_happiness_report.Happiness_Score)\",\"NativeReferenceName\":\"Happiness_Score\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Year\"},\"Name\":\"world_happiness_report.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Country\"}},\"Function\":3},\"Name\":\"Min(world_happiness_report.Country)\",\"NativeReferenceName\":\"First Country\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Happiness v. Generosity'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 377.14,
+          "width": 774.29,
+          "x": 18.57,
+          "y": 324.29,
+          "z": 1002.00
+        }
+      ],
       "width": 1280.00
     }
   ]
