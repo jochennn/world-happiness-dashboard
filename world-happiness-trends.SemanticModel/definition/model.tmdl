@@ -15,8 +15,6 @@ annotation PBIDesktopVersion = 2.141.1558.0 (25.03)+75b5f06a991f8f8a8a4d6b6fcd0f
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table world_happiness_report
-ref table DateTableTemplate_648ed3f4-55c3-4e10-ab98-870f5fc9df0f
-ref table LocalDateTable_9f25e7e1-1e78-4398-bfea-3e488939256e
 
 ref cultureInfo en-US
 

@@ -10,20 +10,12 @@ table world_happiness_report
 		annotation SummarizationSetBy = Automatic
 
 	column Year
-		dataType: dateTime
-		formatString: Long Date
+		dataType: string
 		lineageTag: eacb71d0-1c01-4f91-b1d8-7ab73e86d91a
 		summarizeBy: none
 		sourceColumn: Year
 
-		variation Variation
-			isDefault
-			relationship: 3783fa27-d2fd-4019-af91-0c03985b4de6
-			defaultHierarchy: LocalDateTable_9f25e7e1-1e78-4398-bfea-3e488939256e.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column Happiness_Score
 		dataType: double
@@ -252,7 +244,7 @@ table world_happiness_report
 				    world_happiness_report_Sheet = Source{[Item="world_happiness_report",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(world_happiness_report_Sheet, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Country", type text}, {"Year", Int64.Type}, {"Happiness_Score", type number}, {"GDP_per_Capita", type number}, {"Social_Support", type number}, {"Healthy_Life_Expectancy", type number}, {"Freedom", type number}, {"Generosity", type number}, {"Corruption_Perception", type number}, {"Unemployment_Rate", type number}, {"Education_Index", type number}, {"Population", Int64.Type}, {"Urbanization_Rate", type number}, {"Life_Satisfaction", type number}, {"Public_Trust", type number}, {"Mental_Health_Index", type number}, {"Income_Inequality", type number}, {"Public_Health_Expenditure", type number}, {"Climate_Index", type number}, {"Work_Life_Balance", type number}, {"Internet_Access", type number}, {"Crime_Rate", type number}, {"Political_Stability", type number}, {"Employment_Rate", type number}}),
-				    #"Changed Type1" = Table.TransformColumnTypes(#"Changed Type",{{"Year", type date}})
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Changed Type",{{"Year", type text}})
 				in
 				    #"Changed Type1"
 
